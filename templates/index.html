@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>MYF - Make Your Future</title>
+        <link rel="stylesheet" href="../static/css/index.css">
+        <script type="text/javascript" src="static/js/index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <div id="container">
+            <div id="login">
+                <div id="Box"><strong>{{message}}</strong></div>
+                <div id="log">
+                    <form action = "http://127.0.0.1:8080/login" method="post">
+                        <input name="user" class="login-box" id="username" title="Nick" placeholder="Nick | Email" type="text"></br>
+                        <input name="password" class="login-box" id="password" title="Password" placeholder="Password" type="password"></br>
+                        <button class="login-button" type="submit">Log in</button>
+                    </form>
+                    <div onclick="change_reg()" class="choose-log">Register</div>
+                </div>
+               <div id="register">
+                    <form action="http://127.0.0.1:8080/register" method="post">
+                        <input name="email" class="login-box" id="mailr" title="E-mail" placeholder="E-mail" type="email"></br>
+                        <input name="nick" class="login-box"  id="usernamer"title="Nick" placeholder="Nick" type="text"> </br>
+                        <input name="password" class="login-box" id="passwordr" title="Password" placeholder="Password" type="password"></br>
+                        <div style="margin-top:10px;"><input name="regulamin" id="akceptacja" type="checkbox"><label for="akceptacja">I accept rules.</label></div>
+                        <button  class="login-button" type="submit">Register</button>
+                    </form>
+                    <div onclick="change_log()" class="choose-log">I already have an account.</div>
+                </div>
+            </div>
+        </div>
+        <div style="clear:both;"></div>
+
+    </body>
+</html>
