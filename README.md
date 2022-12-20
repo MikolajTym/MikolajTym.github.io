@@ -1,2 +1,1 @@
-# Py-Git
-Test git functionality and python libraries.
+# Mikolaj Tym
