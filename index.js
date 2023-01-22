@@ -7,20 +7,22 @@ function getDateFromImportant() {
     var minutes = milliseconds / (1000 * 60);
     var hours = milliseconds / (1000 * 60 * 60);
     var days = milliseconds / (1000 * 60 * 60 * 24);
-    var diffInWeeks = milliseconds / (1000 * 60 * 60 * 24 * 7);
 
     days = days < 10 ? "0" + days : days;
+    days = Math.floor(days);
+    hours = Math.floor((milliseconds % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     hours = hours < 10 ? "0" + hours : hours;
+    minutes = Math.floor((milliseconds % (1000 * 60 * 60)) / (1000 * 60));
     minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = Math.floor((milliseconds % (1000 * 60)) / 1000);
     seconds = seconds < 10 ? "0" + seconds : seconds;
-    
-    $("#days").html(Math.floor(days));
-    $("#hours").html(Math.floor(hours-Math.floor(days)*24))
-    $("#minutes").html(Math.floor(minutes-Math.floor(hours)*60))
-    $("#seconds").html(Math.floor(seconds-Math.floor(minutes)*60))
+    $("#days").html(days);
+    $("#hours").html(hours);
+    $("#minutes").html(minutes);
+    $("#seconds").html(seconds);
 }
 
 window.onload = function() {
-    getDateFromImportant;
+    getDateFromImportant();
     setInterval(getDateFromImportant, 1000)
 }
