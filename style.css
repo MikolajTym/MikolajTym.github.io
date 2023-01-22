@@ -68,5 +68,6 @@ h1 {
     }
     .counter-box {
         flex-wrap: nowrap;
+        flex-direction: column;
     }
 }
