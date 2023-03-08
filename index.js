@@ -1,8 +1,10 @@
-function getDateFromImportant() {
+function getDateFromImportant(specificDate, countdown) {
     var currentDate = new Date();
-    var specificDate = new Date("2022-08-25 11:32:00");
-    
-    var milliseconds = currentDate - specificDate;
+    if (countdown) {
+        var milliseconds = specificDate - currentDate;
+    } else {
+        var milliseconds = currentDate - specificDate;
+    }
     var seconds = milliseconds / 1000;
     var minutes = milliseconds / (1000 * 60);
     var hours = milliseconds / (1000 * 60 * 60);
@@ -22,7 +24,21 @@ function getDateFromImportant() {
     $("#seconds").html(seconds);
 }
 
+var interval;
+
 window.onload = function() {
-    getDateFromImportant();
-    setInterval(getDateFromImportant, 1000)
+    getDateFromImportant(new Date("2022-08-25 11:32:00"));
+    interval = setInterval(function() {getDateFromImportant(new Date("2022-08-25 11:32:00")); }, 1000);
+}
+
+function button1(date=new Date("2022-08-25 11:32:00")) {
+    clearInterval(interval);
+    getDateFromImportant(date, countdown=false);
+    interval = setInterval(function() { getDateFromImportant(date, countdown=false); }, 1000);
+}
+
+function button2(date=new Date("2027-10-23 00:00:00")) {
+    clearInterval(interval);
+    getDateFromImportant(date, countdown=true);
+    interval = setInterval(function() { getDateFromImportant(date, countdown=true); }, 1000);
 }
