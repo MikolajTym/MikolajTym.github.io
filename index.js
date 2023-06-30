@@ -37,7 +37,7 @@ function button1(date=new Date("2022-08-25 11:32:00")) {
     interval = setInterval(function() { getDateFromImportant(date, countdown=false); }, 1000);
 }
 
-function button2(date=new Date("2027-10-23 00:00:00")) {
+function button2(date=new Date("2025-07-05 00:00:00")) {
     clearInterval(interval);
     getDateFromImportant(date, countdown=true);
     interval = setInterval(function() { getDateFromImportant(date, countdown=true); }, 1000);
