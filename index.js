@@ -9,15 +9,18 @@ function getDateFromImportant(specificDate, countdown) {
     var minutes = milliseconds / (1000 * 60);
     var hours = milliseconds / (1000 * 60 * 60);
     var days = milliseconds / (1000 * 60 * 60 * 24);
+    var years = milliseconds / (1000 * 60 * 60 * 24 * 365);
 
+    years = Math.floor(years);
+    days = Math.floor((milliseconds % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24));
     days = days < 10 ? "0" + days : days;
-    days = Math.floor(days);
     hours = Math.floor((milliseconds % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     hours = hours < 10 ? "0" + hours : hours;
     minutes = Math.floor((milliseconds % (1000 * 60 * 60)) / (1000 * 60));
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = Math.floor((milliseconds % (1000 * 60)) / 1000);
     seconds = seconds < 10 ? "0" + seconds : seconds;
+    $("#years").html(years);
     $("#days").html(days);
     $("#hours").html(hours);
     $("#minutes").html(minutes);
