@@ -67,7 +67,7 @@ var imageSchedule = {
     "10:30": "imgs/10:30.png",
     "11:00": "imgs/11:00.png",
     "12:00": "imgs/12:00.png",
-    "12:15": "imgs/12:15.png",
+    "12:15": "imgs/15:00.png",
     "12:30": "imgs/12:30.png",
     "13:00": "imgs/13:00.png",
     "13:15": "imgs/13:15.png",
