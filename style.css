@@ -95,7 +95,10 @@ h1 {
         font-size: 10px;
     }
     .image-container {
-        max-width: 300px;
+        max-width: 50%;
+    }
+    .responsive-image {
+        max-width: 50%;
     }
 }
 
