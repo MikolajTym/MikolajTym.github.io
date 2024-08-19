@@ -113,13 +113,14 @@ function updateCountdownToImage(timeUntil) {
 
 function button3() {
     clearInterval(interval);
+    var closestImage = getClosestImage();
+    var imagePath = closestImage.imagePath;
+    var timeUntil = closestImage.timeUntil;
+    updateCountdownToImage(timeUntil);
     $("#image-container").show();
     $("#years").parent().hide();
     $("#days").parent().hide();
     $(".counter-box").css("height", "auto");
-    var closestImage = getClosestImage();
-    var imagePath = closestImage.imagePath;
-    var timeUntil = closestImage.timeUntil;
 
     var updateImageSize = function() {
         var screenWidth = window.innerWidth;
