@@ -74,7 +74,8 @@ var imageSchedule = {
     "14:00": "imgs/14:00.png",
     "14:15": "imgs/14:15.png",
     "15:00": "imgs/15:00.png",
-    "17:38": "imgs/17:38.png",
+    "17:00": "imgs/17:00.png",
+    "19:22": "imgs/19:22.png",
 };
 
 function getClosestImage() {
