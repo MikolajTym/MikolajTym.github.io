@@ -108,7 +108,4 @@ h1 {
     .counter-label {
         font-size: 14px;
     }
-    .responsive-image {
-        max-width: calc(100vw - 50px);
-    }
 }

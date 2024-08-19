@@ -124,11 +124,10 @@ function button3() {
     var updateImageSize = function() {
         var screenWidth = window.innerWidth;
         var imageWidth = (screenWidth < 500) ? screenWidth - 50 : 'auto';
-        $(".responsive-image").css("max-width", imageWidth + "px");
         $("#image-container").css("max-width", imageWidth + "px");
     };
     $("#image-container").html('<img src="' + imagePath + '" class="responsive-image">');
-    updateImageSize(); // Ustawienie wielkości zdjęcia na początku
+    updateImageSize();
     $(window).resize(updateImageSize);
 
     interval = setInterval(function() {
