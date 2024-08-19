@@ -87,21 +87,17 @@ h1 {
     color: #004488;
     margin-top: 10px;
 }
-/* @media (max-width: 600px) {
-    .counter-item {
-        width: 100%;
-    }
+@media (max-width: 600px) {
     .counter-value {
-        font-size: 48px;
+        font-size: 32px;
     }
     .counter-label {
-        font-size: 16px;
+        font-size: 12px;
     }
-    .counter-box {
-        flex-wrap: nowrap;
-        flex-direction: column;
+    .image-container {
+        max-width: 500px;
     }
-} */
+}
 
 .image-container {
     max-width: 650px;
