@@ -62,6 +62,7 @@ function button2(date=new Date("2025-07-05 00:00:00")) {
 }
 
 var imageSchedule = {
+    "07:00": "imgs/07:00.png",
     "09:15": "imgs/09:15.png",
     "10:30": "imgs/10:30.png",
     "11:00": "imgs/11:00.png",
@@ -71,7 +72,8 @@ var imageSchedule = {
     "13:00": "imgs/13:00.png",
     "14:00": "imgs/14:00.png",
     "14:05": "imgs/14:05.png",
-    "15:00": "imgs/12:00.png",
+    "15:00": "imgs/15:00.png",
+    "17:38": "imgs/17:38.png",
 };
 
 function getClosestImage() {
@@ -111,7 +113,6 @@ function updateCountdownToImage(timeUntil) {
 
 function button3() {
     clearInterval(interval);
-    $("#counter-box").show();
     $("#image-container").show();
     $("#years").parent().hide();
     $("#days").parent().hide();

@@ -87,21 +87,6 @@ h1 {
     color: #004488;
     margin-top: 10px;
 }
-@media (max-width: 600px) {
-    .counter-value {
-        font-size: 26px;
-    }
-    .counter-label {
-        font-size: 10px;
-    }
-    .image-container {
-        max-width: 50%;
-    }
-    .responsive-image {
-        max-width: 50%;
-    }
-}
-
 .image-container {
     max-width: 650px;
     margin: 20px auto;
@@ -114,4 +99,19 @@ h1 {
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+    .counter-value {
+        font-size: 32px;
+    }
+    .counter-label {
+        font-size: 14px;
+    }
+    .image-container {
+        max-width: 50%;
+    }
+    .responsive-image {
+        max-width: 50%;
+    }
 }
