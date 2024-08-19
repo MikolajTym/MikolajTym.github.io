@@ -42,7 +42,7 @@ function button1(date=new Date("2022-08-25 11:32:00")) {
     $("#counter-box").show();
     $("#years").parent().show();
     $("#days").parent().show();
-    $(".counter-box").css("height", "85%");
+    $(".counter-box").css("height", "75%");
 
     getDateFromImportant(date, countdown=false);
     interval = setInterval(function() { getDateFromImportant(date, countdown=false); }, 1000);
@@ -55,7 +55,7 @@ function button2(date=new Date("2025-07-05 00:00:00")) {
     $("#counter-box").show();
     $("#years").parent().show();
     $("#days").parent().show();
-    $(".counter-box").css("height", "85%");
+    $(".counter-box").css("height", "75%");
 
     getDateFromImportant(date, countdown=true);
     interval = setInterval(function() { getDateFromImportant(date, countdown=true); }, 1000);
