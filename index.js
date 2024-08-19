@@ -123,9 +123,12 @@ function button3() {
 
     $("#image-container").html('<img src="' + imagePath + '" class="responsive-image">');
 
-    updateCountdownToImage(timeUntil);
     interval = setInterval(function() {
         timeUntil -= 1000;
-        updateCountdownToImage(timeUntil);
+        if (timeUntil <= 0) {
+            location.reload();
+        } else {
+            updateCountdownToImage(timeUntil);
+        }
     }, 1000);
 }

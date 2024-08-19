@@ -109,6 +109,6 @@ h1 {
         font-size: 14px;
     }
     .image-container {
-        max-width: 90%;
+        max-width: 450px;
     }
 }
