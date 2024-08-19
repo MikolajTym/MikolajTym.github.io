@@ -89,13 +89,13 @@ h1 {
 }
 @media (max-width: 600px) {
     .counter-value {
-        font-size: 32px;
+        font-size: 26px;
     }
     .counter-label {
-        font-size: 12px;
+        font-size: 10px;
     }
     .image-container {
-        max-width: 500px;
+        max-width: 300px;
     }
 }
 
