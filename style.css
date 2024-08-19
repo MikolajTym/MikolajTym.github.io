@@ -109,6 +109,6 @@ h1 {
         font-size: 14px;
     }
     .responsive-image {
-        max-width: calc(100vw - 50px); /* 50px mniejsze od szerokości ekranu */
+        max-width: calc(100vw - 50px);
     }
 }
