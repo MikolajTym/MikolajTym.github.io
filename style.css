@@ -87,7 +87,7 @@ h1 {
     color: #004488;
     margin-top: 10px;
 }
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .counter-item {
         width: 100%;
     }
@@ -101,7 +101,7 @@ h1 {
         flex-wrap: nowrap;
         flex-direction: column;
     }
-}
+} */
 
 .image-container {
     max-width: 650px;
