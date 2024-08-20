@@ -62,7 +62,7 @@ function button2(date=new Date("2025-07-05 00:00:00")) {
 }
 
 var imageSchedule = {
-    "07:00": "imgs/07:00.png",
+    "06:39": "imgs/06:39.png",
     "09:15": "imgs/09:15.png",
     "10:30": "imgs/10:30.png",
     "11:00": "imgs/11:00.png",
