@@ -61,6 +61,19 @@ function button2(date=new Date("2025-07-05 00:00:00")) {
     interval = setInterval(function() { getDateFromImportant(date, countdown=true); }, 1000);
 }
 
+function button4(date=new Date("2029-09-24 00:00:00")) {
+    clearInterval(interval);
+
+    $("#image-container").hide();
+    $("#counter-box").show();
+    $("#years").parent().show();
+    $("#days").parent().show();
+    $(".counter-box").css("height", "75%");
+
+    getDateFromImportant(date, countdown=true);
+    interval = setInterval(function() { getDateFromImportant(date, countdown=true); }, 1000);
+}
+
 var imageSchedule = {
     "06:39": "imgs/06:39.png",
     "09:15": "imgs/09:15.png",
