@@ -48,7 +48,7 @@ function button1(date=new Date("2022-08-25 11:32:00")) {
     interval = setInterval(function() { getDateFromImportant(date, countdown=false); }, 1000);
 }
 
-function button2(date=new Date("2025-07-05 00:00:00")) {
+function button2(date=new Date("2025-07-07 10:15:00")) {
     clearInterval(interval);
 
     $("#image-container").hide();
